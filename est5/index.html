@@ -3,11 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>imagens dinamicas</title>
+    <title>midias em html5</title>
 </head>
 <body>
 
-    
-    
+    <h1>Imagens dinamicas</h1>
+    <p>tente abrir essas Imagens em varios dispositivos diferentes</p>
+    <picture>
+        <source media="(max-width:750px )" srcset="img/img-p.png" type="image/png">
+        <source media="(max-width:1000px )" srcset="img/img-m.png" type="image/png">
+        <img src="img/img-g.png" alt="imagem flexivel">
+    </picture>
+    <p>com essa tag posso adapitar uma imagem para diferentes dispositivos</p>
+    <p>a ordem da tag source sempre deve ser da imagem principal em baixo</p>
+
+    <h1>Reproduzindo audio</h1>
+    <p>vamos aprender a reproduzir audio</p>
+    <audio src="midia/audio.mp3" autoplay controls></audio>
+    <!-- autoplay=iniciar audio 
+     controls=controle de audio-->
+     <audio autoplay controls loop>
+        <source src="midia/audio.mp3" type="audio/mpeg">
+     </audio>
+     <!--source=usado para carregar diferentes tipos de audio
+     loop=colocar audio em loop -->
+
+     <h1></h1>
+
 </body>
 </html>
