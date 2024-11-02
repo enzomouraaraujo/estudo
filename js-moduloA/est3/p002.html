@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom</title>
+</head>
+<body>
+    
+    <label for="">digite sua idade:</label>
+    <input type="number" name="" id="i"><br>
+
+    <button value="validar" onclick="a()" type="submit">confirmar</button>
+
+    <p id="resposta"></p>
+
+    <script>
+        function a (){
+           var idade = document.getElementById("i").value;
+            if(idade <= 17){
+                document.getElementById("resposta").textContent = "vc é menor"
+            }
+            if(idade >= 18){
+                document.getElementById('resposta').textContent = 'vc e maior'
+            }
+        }
+    </script>
+
+</body>
+</html>
